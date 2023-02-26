@@ -1,10 +1,18 @@
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+"""
+Pulled from Zeta36/chess-alpha-zero
+"""
+
+import os
+import sys
+import multiprocessing as mp
+from src_code.a_config.config import make_chess_config
+from src_code.b_manager.manager import start
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def control():
+    az = make_chess_config()
+    start('')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+if __name__ == "__main__":
+    control()
